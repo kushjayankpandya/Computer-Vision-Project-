@@ -109,17 +109,13 @@ these references \[3,4,5\].
     defined as the cosine of the angle between them, represented by the
     dot product of the two vectors divided by the product of their
     magnitudes. The formula is given as:  
-    $$\\begin{split}
-        Cosine & = \\frac{\\vec{H^O}.\\vec{H^R}}{{\|\|{H^O}\|\|.\|\|{H^R}\|\|}}\\\\
-    \\end{split}$$
+    ![Cosine Similarity Equation](https://latex.codecogs.com/svg.latex?%5Cdpi%7B120%7D%20%5Cfrac%7B%5Cvec%7BH%5EO%7D.%5Cvec%7BH%5ER%7D%7D%7B%7C%7C%7BH%5EO%7D%7C%7C.%7C%7C%7BH%5ER%7D%7C%7C%7D)
 
 2.  **RMSE Similarity** - Root Mean square Error - This error is
     calculated by taking the square root of the average ofthe squared
     differences between the predicted and actual values. The formula is
     given as:  
-    $$\\begin{split}
-       RMSE & = \\sqrt{\\sum\_{i = 0}^{(256\*3) - 1}{(\\vec{H^O} - \\vec{H^R})^2}}\\\\
-    \\end{split}$$
+    ![RMSE Equation](https://latex.codecogs.com/svg.latex?%5Cdpi%7B120%7D%20%5Csqrt%7B%5Csum_%7Bi%20%3D%200%7D%5E%7B(256%2A3)%20-%201%7D%7B(%5Cvec%7BH%5EO%7D%20-%20%5Cvec%7BH%5ER%7D)%5E2%7D%7D)
 
 To use the above custom metric we need a single distribution but since
 our images are RGB, we will get three distributions. Hence we will
