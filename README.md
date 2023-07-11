@@ -51,7 +51,7 @@ image noise\[1\], which are:-
     resembling grains of salt and pepper.
 
 <figure>
-<img src="fig/noise.jpeg" id="fig:galaxy" style="width:9cm;height:3cm" alt="Displaying various types of noises" /><figcaption aria-hidden="true">Displaying various types of noises</figcaption>
+<img src="fig/noise.jpeg" id="fig:galaxy"  alt="Displaying various types of noises" /><figcaption aria-hidden="true">Displaying various types of noises</figcaption>
 </figure>
 
 ### Types of Similarity Metrics
@@ -160,7 +160,7 @@ corners, and textures. The architecture of our implementation is as
 follows:
 
 <figure>
-<img src="fig/basic_cnn.jpeg" id="fig:galaxy" style="width:8cm;height:4cm" alt="Basic Convolution Neural Network of 10 layers" /><figcaption aria-hidden="true">Basic Convolution Neural Network of 10 layers</figcaption>
+<img src="fig/basic_cnn.jpeg" id="fig:galaxy"  alt="Basic Convolution Neural Network of 10 layers" /><figcaption aria-hidden="true">Basic Convolution Neural Network of 10 layers</figcaption>
 </figure>
 
 #### Residual Network
@@ -171,7 +171,7 @@ problem. Its similar to to above network, except its deeper(20 layers)
 and has periodic skip connections.
 
 <figure>
-<img src="fig/resnet-20.jpeg" id="fig:galaxy" style="width:8cm;height:5cm" alt="Residual Network of 20 layers" /><figcaption aria-hidden="true">Residual Network of 20 layers</figcaption>
+<img src="fig/resnet-20.jpeg" id="fig:galaxy"  alt="Residual Network of 20 layers" /><figcaption aria-hidden="true">Residual Network of 20 layers</figcaption>
 </figure>
 
 #### Symmetric Skip Autoencoders
@@ -195,7 +195,7 @@ preserve spatial information better and reduce the effect of vanishing
 gradients during training. The architecture of this model is as follows:
 
 <figure>
-<img src="fig/convolutionskipencoder.jpg" id="fig:galaxy" style="width:8cm;height:5cm" alt="Symmetric Skip Autoencoder architecture" /><figcaption aria-hidden="true">Symmetric Skip Autoencoder architecture</figcaption>
+<img src="fig/convolutionskipencoder.jpg" id="fig:galaxy"  alt="Symmetric Skip Autoencoder architecture" /><figcaption aria-hidden="true">Symmetric Skip Autoencoder architecture</figcaption>
 </figure>
 
 #### U-Net
@@ -215,7 +215,7 @@ counter part while decoding, we concatenate the decoder and its
 symmetric counter parts for further layer of processing.
 
 <figure>
-<img src="fig/UNet.jpeg" style="width:8cm;height:5cm" alt="U-Net architecture" /><figcaption aria-hidden="true">U-Net architecture</figcaption>
+<img src="fig/UNet.jpeg"  alt="U-Net architecture" /><figcaption aria-hidden="true">U-Net architecture</figcaption>
 </figure>
 
 #### Conditional GANs
@@ -236,13 +236,13 @@ output is a denoised image. The architecture for conditional GAN’s is as
 follows:
 
 <figure>
-<img src="fig/UNet.jpeg" style="width:9cm;height:4cm" alt="Generator of GANs" /><figcaption aria-hidden="true">Generator of GANs</figcaption>
+<img src="fig/UNet.jpeg"  alt="Generator of GANs" /><figcaption aria-hidden="true">Generator of GANs</figcaption>
 </figure>
 
 We have used the same architecture as U-Net for the ’Generator’.
 
 <figure>
-<img src="fig/discriminator.jpeg" style="width:9cm;height:5cm" alt="Discriminator of GANs" /><figcaption aria-hidden="true">Discriminator of GANs</figcaption>
+<img src="fig/discriminator.jpeg"  alt="Discriminator of GANs" /><figcaption aria-hidden="true">Discriminator of GANs</figcaption>
 </figure>
 
 ### Our Approach
@@ -262,15 +262,15 @@ in such a way that the model performs better if it’s in the lower left
 corner.
 
 <figure>
-<img src="fig/result1.png" id="fig:galaxy" style="width:9cm;height:6cm" alt="Results for LSUN dataset" /><figcaption aria-hidden="true">Results for LSUN dataset</figcaption>
+<img src="fig/result1.png" id="fig:galaxy"  alt="Results for LSUN dataset" /><figcaption aria-hidden="true">Results for LSUN dataset</figcaption>
 </figure>
 
 <figure>
-<img src="fig/celebahq dataset fig.png" id="fig:galaxy" style="width:8cm;height:6cm" alt="Results for celeba-Hq Dataset" /><figcaption aria-hidden="true">Results for celeba-Hq Dataset</figcaption>
+<img src="fig/celebahq dataset fig.png" id="fig:galaxy"  alt="Results for celeba-Hq Dataset" /><figcaption aria-hidden="true">Results for celeba-Hq Dataset</figcaption>
 </figure>
 
 <figure>
-<img src="fig/Imagenet mini dataset fig.png" id="fig:galaxy" style="width:10cm;height:6cm" alt="Results for Imagenet mini Dataset" /><figcaption aria-hidden="true">Results for Imagenet mini Dataset</figcaption>
+<img src="fig/Imagenet mini dataset fig.png" id="fig:galaxy"  alt="Results for Imagenet mini Dataset" /><figcaption aria-hidden="true">Results for Imagenet mini Dataset</figcaption>
 </figure>
 
 # Observation and Conclusion
