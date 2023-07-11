@@ -1,22 +1,23 @@
----
-abstract: |
+# Comparing Deep Learning Approaches for Image denoising
+
+## Abstract: 
   In this project, we propose to implement and compare them using
   well-known datasets to apply and compare image-denoising models. We
   will use standard and new metrics to compare image-denoising results.
   We would use Basic CNN, Convolution skip Autoencoder, Residual Dense
   Network, Conditional GANs, and U-Net models architectures.
-author:
+  
+## Author:
 - Dwijesh Jigarbhai Shah
 - Haarika Ambati
 - Kush Jayank Pandya
-bibliography:
-- paper.bib
-title: Comparing Deep Learning Approaches for Image denoising
----
 
-# Introduction
 
-## Image Denoising
+
+
+## Introduction
+
+### Image Denoising
 
 Image Denoising is a process to remove corruption in an image caused by
 different factors. Denoising an image is difficult since the noise is
@@ -32,7 +33,7 @@ processing, such as image analysis and tracking would be affected.
 Therefore, image denoising plays an important part image processing
 systems.
 
-## Types of Corruption
+### Types of Corruption
 
 In this project, we are going to handle different types of frequent
 image noise\[1\], which are:-
@@ -53,7 +54,7 @@ image noise\[1\], which are:-
 <img src="fig/noise.jpeg" id="fig:galaxy" style="width:9cm;height:3cm" alt="Displaying various types of noises" /><figcaption aria-hidden="true">Displaying various types of noises</figcaption>
 </figure>
 
-## Types of Similarity Metrics
+### Types of Similarity Metrics
 
 In our project, we compare our original image with the resultant
 denoised image based on the following comparison metrics.
@@ -90,7 +91,7 @@ architectures. The once we will use are as follows:-
     compression codecs in image compression, PSNR approximates the human
     perception of reconstruction quality.
 
-### Our Image Similarity Metrics:-
+#### Our Image Similarity Metrics:-
 
 For comparing similarity metrics, there are many statistical tests (i.e
 Chi-squared test, Two-sample t-test, Kruskal-Wallis test, Mann-Whitney U
@@ -125,35 +126,35 @@ our images are RGB, we will get three distributions. Hence we will
 concatenate these three distributions to form a histogram vector of size
 (3\*256).
 
-# Datasets
+## Datasets
 
-### CelebA-HQ resized
+#### CelebA-HQ resized
 
 This dataset\[10\] contains 30,000 high-quality celebrity faces,
 resampled to 256 x 256 pixels.
 
-### LSUN
+#### LSUN
 
 This is a large-scale scene understanding dataset\[11\], which includes
 around 3 million images with 256 x 256 pixels resolution. We would use a
 subset of this dataset for our project.
 
-### ImageNet
+#### ImageNet
 
 This is a large dataset\[12\] of over 14 million images with varying
 resolutions. We will select about 30000 images for our project.
 
-# Methodology
+## Methodology
 
 <span id="gen_inst" label="gen_inst">\[gen_inst\]</span>
 
-## Models Used
+### Models Used
 
 As discussed in the abstract, we would be using Basic CNN, Convolution
 skip Autoencoder, Residual Dense Networks, Conditional GANs, and U-Net
 models architectures.
 
-### Basic CNN
+#### Basic CNN
 
 In this implementation, we are using 10 convolution layers with ’relu’
 activation to do the image denoising. Each convolution layer applies a
@@ -166,7 +167,7 @@ follows:
 <img src="fig/basic_cnn.jpeg" id="fig:galaxy" style="width:8cm;height:4cm" alt="Basic Convolution Neural Network of 10 layers" /><figcaption aria-hidden="true">Basic Convolution Neural Network of 10 layers</figcaption>
 </figure>
 
-### Residual Network
+#### Residual Network
 
 ResNet is a type of neural network that uses skip connections\[6,7,9\].
 It helps us to make deep networks by eliminating the vanishing gradient
@@ -177,7 +178,7 @@ and has periodic skip connections.
 <img src="fig/resnet-20.jpeg" id="fig:galaxy" style="width:8cm;height:5cm" alt="Residual Network of 20 layers" /><figcaption aria-hidden="true">Residual Network of 20 layers</figcaption>
 </figure>
 
-### Symmetric Skip Autoencoders
+#### Symmetric Skip Autoencoders
 
 It is a powerful tool for image denoising or reconstruction
 applications. This type of neural network combines convolutional
@@ -201,7 +202,7 @@ gradients during training. The architecture of this model is as follows:
 <img src="fig/convolutionskipencoder.jpg" id="fig:galaxy" style="width:8cm;height:5cm" alt="Symmetric Skip Autoencoder architecture" /><figcaption aria-hidden="true">Symmetric Skip Autoencoder architecture</figcaption>
 </figure>
 
-### U-Net
+#### U-Net
 
 This architecture consists of an encoder and a decoder path, where the
 encoder extracts high-level features from the input image and the
@@ -221,7 +222,7 @@ symmetric counter parts for further layer of processing.
 <img src="fig/UNet.jpeg" style="width:8cm;height:5cm" alt="U-Net architecture" /><figcaption aria-hidden="true">U-Net architecture</figcaption>
 </figure>
 
-### Conditional GANs
+#### Conditional GANs
 
 Conditional Generative Adversarial Networks (GANs) are a type of GAN
 where both the generator and the discriminator take some additional
@@ -248,7 +249,7 @@ We have used the same architecture as U-Net for the ’Generator’.
 <img src="fig/discriminator.jpeg" style="width:9cm;height:5cm" alt="Discriminator of GANs" /><figcaption aria-hidden="true">Discriminator of GANs</figcaption>
 </figure>
 
-## Our Approach
+### Our Approach
 
 We have used 256 x 256 input size for all the datasets. We will be
 training our models with ’Imagenet’ dataset subset with 45000 images for
@@ -258,7 +259,7 @@ Then we will get the metrics defined in section 1.3 and compare how our
 dataset performed in conventional metrics and in our novel approach
 metric. So we can see the difference between metrics.
 
-# Results
+## Results
 
 In Figures 8,9,10, we can see our results. We have manipulated the axis
 in such a way that the model performs better if it’s in the lower left
@@ -294,7 +295,7 @@ corner.
     computation to optimize, and also, how weights and biases converge
     to minima depends on your training approach.
 
-# References
+## References
 
 1.  [ V. Lendave, “A Guide to Different Types of Noises and Image
     Denoising Methods,” Analytics India Magazine, Sep. 25, 2021.
