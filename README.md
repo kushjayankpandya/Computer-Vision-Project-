@@ -142,7 +142,7 @@ resolutions. We will select about 30000 images for our project.
 
 ## Methodology
 
-<span id="gen_inst" label="gen_inst">\[gen_inst\]</span>
+
 
 ### Models Used
 
